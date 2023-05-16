@@ -4,6 +4,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "_posts/2023-05-05-elliptical.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "_posts/2023-05-16-binary-tree.md"
         }
     ]
 }

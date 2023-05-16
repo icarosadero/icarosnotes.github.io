@@ -1,6 +1,6 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
+title: Backyard Physics
+subtitle: Physics of the Banal
 email: icarosadero@gmail.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -33,6 +33,13 @@ socials:
 
 # build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-mermaid
+
+mermaid:
+  src: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  options: { "theme": "dark" }
 
 sass:
   style: compressed
