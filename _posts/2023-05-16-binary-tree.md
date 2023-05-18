@@ -29,3 +29,39 @@ The most important operations related to binary trees are the insertion of a new
 
 As for the deletion of the most important vertex, it gets swapped with the one at the bottom of the tree and only then it gets removed. This maintains the whole structure of the tree but it doesn't necessarily keep the order of the vertices. To fix that a similar bubbling operation is performed downwards in the tree until the vertex is in the right place. Since we're only walking downwards instead or upwards, the complexity of this operation is still $\mathcal{O}(\log m)$.
 
+## Binary tree in an Array
+
+Now that we have a quick overview of binary trees, let us concern ourselves with the implementation of this data structure. The most common way to do this is to define each vertex in the tree as a class with two attributes denoting the child vertices. In Python, it would look like this:
+
+```python
+class Node:
+    def __init__(self, left=None, right=None):
+        self.left = left
+        self.right = right
+```
+
+Although there is nothing wrong with this representation, a more compact way would be to store each vertex as an element of a list. This is done by starting from the first layer and then filling up the array from left to right until the last layer. The array shows the same tree as in the previous example represented as an array indexed from 1 instead of zero:
+
+```python
+tree = [1, 2, 3, 4, 5, 6, 7]
+```
+
+So, as you can see, there are no surprises. Since the total number of nodes per layer is a power of 2, we can tell which layer a certain vertex belongs to by checking how many powers of two would fit in its corresponding index. That is, we look at the most significant bit of its binary representation. So, for example, index 6 has binary representation `0b110` with its most significant bit in the third place (from right to left), meaning that the vertex with this index is on the third layer. In general, index $j$ can be decomposed in the following form:
+
+$$j = 2^{k_j-1} + r_j$$
+
+Where $k_j$ stands for the kth layer, which is also the most significant bit of the representation with a unit offset, and $r_j$ is a remainder. Note that the remainder shows how many nodes precede that index in the same layer. Taking index 6 again, for example, its remainder would be `0b010`, meaning that there are two vertices before it in its layer.
+
+If we wish to find the leftmost child of the vertex indexed by $j$, we can do so by noticing that each preceding vertex on the same layer will always have two children. So, by knowing how many indexes precede $j$ in the same layer, we can multiply that number by two to get the relative index of the child node $i$:
+
+$$r_i = 2r_j$$
+
+Using our previous definition of $j$, we can rewrite this as:
+
+$$i - 2^{k_i-1} = 2(j - 2^{k_j-1})$$
+
+Noting that $k_i = k_j + 1$ and rearranging the terms, we get:
+
+$$i = 2j$$
+
+For the rightmost child, we just add one.
