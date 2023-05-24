@@ -65,3 +65,28 @@ Noting that $k_i = k_j + 1$ and rearranging the terms, we get:
 $$i = 2j$$
 
 For the rightmost child, we just add one.
+
+$$i = 2j + 1$$
+
+### Bubbling Up
+
+Now that we know how to relate the position of a vertex with its given index, we can perform a bubbling operation. Suppose that we add a new vertex to the end of a tree, and we want to bubble up the new vertex so that the tree stays balanced. We will need to do this operation until the vertex either reaches the very top or until its parent has a weight smaller or equal to itself. Organizing the tree in an array $T$, that condition is:
+
+$$ T_{P(i)} \geq T_i $$
+
+Where $P(i)$ returns the index of the parent of a vertex with index $i$, and it is defined with the relationship we found earlier:
+
+$$P(i) = \begin{cases}\frac{i}{2}, \text{if} \mod(i,2)=0\\ \frac{i-1}{2}\end{cases}$$.
+
+In Python, the algorithm would look like this:
+
+```python
+def P(i): return (i+1)//2 - 1 if i%2==0 else i//2 - 1
+
+def bubble_up(T, i):
+    while i > 0 and T[i] < T[P(i)]:
+        T[i], T[P(i)] = T[P(i)], T[i]
+        i = P(i)
+```
+
+Notice that we had to shift the index $i$ to $i+1$ in the definition of $P$ since arrays are zero-indexed in Python.
