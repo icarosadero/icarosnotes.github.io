@@ -130,6 +130,6 @@ In the steam analogy, this is the same as letting the linear shaft be aligned wi
 ![Egg-shaped](/assets/images/2023/2023-05-05-elliptical/egg.svg)
 {: refdef}
 
-## Concusion
+## Conclusion
 
 Not even on asymptotic grounds does the trajectory of this machine really equates to an ellipse, although it fairly approximates one in some cases. However, this discrepancy makes no real difference in the operation of the machine, as any "ellipse-like" shape would dampen the impact of the movement for the user. The questioning of the elliptical trajectory is purely pendantic ad unimportant, but it does serve as a challenging problem to tackle.

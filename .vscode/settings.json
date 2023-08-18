@@ -9,6 +9,19 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "_posts/2023-05-16-binary-tree.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "_posts/2023-08-17-nernst.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "_posts/2023-08-17-nernst-potential.md"
         }
+    ],
+    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+        "nernst"
     ]
 }

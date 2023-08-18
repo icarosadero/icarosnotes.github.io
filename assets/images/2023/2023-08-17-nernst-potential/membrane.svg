@@ -1,0 +1,26 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+
+    <!-- Random Dots Inside Blob -->
+    <g fill="white">
+        <!-- Use a loop to generate random dots -->
+        <!-- Adjust the range for your desired dot placement -->
+        <circle cx="225" cy="150" r="2" />
+        <circle cx="275" cy="180" r="2" />
+        <circle cx="245" cy="230" r="2" />
+        <circle cx="315" cy="130" r="2" />
+        <circle cx="195" cy="190" r="2" />
+        <circle cx="250" cy="160" r="2" />
+        <circle cx="190" cy="140" r="2" />
+        <circle cx="240" cy="180" r="2" />
+        <circle cx="265" cy="220" r="2" />
+        <circle cx="300" cy="200" r="2" />
+        <circle cx="210" cy="220" r="2" />
+        <circle cx="280" cy="150" r="2" />
+        <circle cx="230" cy="200" r="2" />
+    </g>
+
+    <!--Circle enclosing all dots-->
+    <circle cx="225" cy="150" r="100" fill="none" stroke="white" stroke-width="2" />
+</svg>
