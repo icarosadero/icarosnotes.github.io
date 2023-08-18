@@ -2,7 +2,7 @@
 layout: post
 title: "Elliptical Machine"
 description: "A geometric analysis of the elliptical machine"
-#image: /assets/images/pic01.jpg
+#image: {{ site.baseurl }}/assets/images/pic01.jpg
 ---
 
 <style>
@@ -83,22 +83,22 @@ Regardless of what they look like, we already knew the solutions must be either 
 With that, we can throw some numbers and see what the trajectories look like. For example, here are a few plots for the first solution:
 
 {: refdef: style="text-align: center;"}
-![First Solution Plot](/assets/images/2023/2023-05-05-elliptical/plot1.svg)
-![First Solution Plot](/assets/images/2023/2023-05-05-elliptical/plot2.svg)
+![First Solution Plot]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/plot1.svg)
+![First Solution Plot]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/plot2.svg)
 {: refdef}
 
 They look round, but definitely not elliptical. The second solution is a bit better except for the first one:
 
 {: refdef: style="text-align: center;"}
-![Second Solution Plot](/assets/images/2023/2023-05-05-elliptical/plot3.svg)
-![Second Solution Plot](/assets/images/2023/2023-05-05-elliptical/plot4.svg)
-![Second Solution Plot](/assets/images/2023/2023-05-05-elliptical/plot5.svg)
+![Second Solution Plot]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/plot3.svg)
+![Second Solution Plot]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/plot4.svg)
+![Second Solution Plot]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/plot5.svg)
 {: refdef}
 
 If we decide to use realistic values for the parameters, as the ones from the schematic on the geometric construction, we get something that indeed looks like a squished ellipse:
 
 {: refdef: style="text-align: center;"}
-![Second Solution Plot](/assets/images/2023/2023-05-05-elliptical/realistic.svg)
+![Second Solution Plot]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/realistic.svg)
 {: refdef}
 
 ## Asymptotic Behavior
@@ -106,7 +106,7 @@ If we decide to use realistic values for the parameters, as the ones from the sc
 From this last set of solutions, it becomes clear that the larger the parameter $b$ is, the more elliptical the trajectory appears to be. An interesting limit case is if we make $b$ infinitely larger while also moving the point $B$ infinitely far away from the origin along the $y$ axis. This would correspond to letting the point $Z$ only move along the $x$ direction, akin to the movement of the piston of a steam engine like in the picture below.
 
 {: refdef: style="text-align: center;"}
-![Steam Engine](/assets/images/2023/2023-05-05-elliptical/steam_engine.gif)
+![Steam Engine]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/steam_engine.gif)
 {: refdef}
 
 > [Source](https://www.cs.mcgill.ca/~rwest/wikispeedia/wpcd/wp/s/Steam_engine.htm)
@@ -127,7 +127,7 @@ $$r \cos\left(\theta\right) + \frac{1}{2} i \, r \sin\left(\theta\right) - \frac
 In the steam analogy, this is the same as letting the linear shaft be aligned with the rotation axis of the wheel The resulting trajectory is "egg-shaped" (blue curve) and decently approximates an actual ellipse (red curve):
 
 {: refdef: style="text-align: center;"}
-![Egg-shaped](/assets/images/2023/2023-05-05-elliptical/egg.svg)
+![Egg-shaped]({{ site.baseurl }}/assets/images/2023/2023-05-05-elliptical/egg.svg)
 {: refdef}
 
 ## Conclusion
