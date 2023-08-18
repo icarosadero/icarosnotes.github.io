@@ -2,7 +2,7 @@
 layout: post
 title: "Elliptical Machine"
 description: "A geometric analysis of the elliptical machine"
-#image: assets/images/pic01.jpg
+#image: /assets/images/pic01.jpg
 ---
 
 <style>

@@ -15,10 +15,12 @@ Our goal is to reach this expression starting from first principles of statistic
 
 ## Model Assumptions
 
-Our model will assume that the membrane behaves as the boundary of a system of $N$ particles of charge $q$ that are kept under constant temperature $T$. The exact shape of this boundary is assumed to be unimportant, and the particles aren't allowed to cross it.
+Our model will assume that the membrane separate a system of $N$ particles of charge $q$ that are kept under constant temperature $T$ in a heat bath. The exact shape of this boundary is assumed to be unimportant. The number of particles is kept constant.
 
 {: refdef: style="text-align: center;"}
-![Membrane Model](/assets/images/2023/2023-08-17-nernst-potential/membrane.svg){: width="30%"}
+|![Membrane Model](/assets/images/2023/2023-08-17-nernst-potential/membrane.svg){: width="30%"}|
+|:--:|
+|*The model assumes that the membrane separates the system into two regions $\Omega$ and $\Sigma$ with different concentration of particles.*|
 {: refdef}
 
 The Classical Hamiltonian for a single particle $j$ inside the membrane is given by $H_j$:
@@ -73,11 +75,11 @@ Defining by $n(\vec{x}')$ the expected particle density at a position $\vec{x}'$
 
 $$n(\vec{x}') = \left\langle\sum_{j=1}^{N}\delta(\vec{x}_j-\vec{x}')\right\rangle$$
 
-The expected value of the dirac productory is calculated with the probability distribution of the system:
+The expected value of the dirac sum is calculated with the probability distribution of the system:
 
 $$n(\vec{x}') = \left\langle\sum_{j=1}^{N}\delta(\vec{x}_j-\vec{x}')\right\rangle = \sum_{\left\{\vec{x},\vec{p}\right\}}\sum_{j=1}^{N}\delta(\vec{x}_j-\vec{x}')P(\vec{x}, \vec{p})$$
 
-The delta function can now be computed by expanding the sum over $\left\\{\vec{x},\vec{p}\right\\}$ as an integral:
+The delta function can now be computed by expanding the sum over $\left\\{\vec{x},\vec{p}\right\\}$ as an integral. To be pedantic, this would yield a $\frac{1}{\Delta \vec{x} \Delta \vec{p}}$ factor related to the uncertainty of the measure, which is replaced by Planck's constant as $\frac{1}{h}$; but since this would also show up on the integral of the partition function, they would cancel out. The expression then becomes:
 
 $$ = \int\prod_{j=1}^{N}\mathrm{d}\vec{x}_j\mathrm{d}\vec{p}_j\sum_{k=1}^{N}\delta(\vec{x}_k-\vec{x}')P_j(\vec{x}_j, \vec{p}_j)$$
 

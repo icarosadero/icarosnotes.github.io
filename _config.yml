@@ -3,7 +3,7 @@ title: Icaro's Notes
 subtitle: 
 email: icarosadero@gmail.com
 description: A blog about math, physics, programming and areas alike.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/notes" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Ícaro Costa
 # street_address: 1234 Somewhere Road
