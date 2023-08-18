@@ -1,11 +1,9 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hey kid, wanna some maths?'
+landing-title: null
 description: null
 image: null
 author: null
-show_tile: false
+show_tile: true
 ---
-
-I make posts about math, physics and programming.

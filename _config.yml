@@ -1,8 +1,8 @@
 # site settings
 title: Icaro's Notes
-subtitle: A blog about math, physics, programming and other stuff
+subtitle: 
 email: icarosadero@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+description: A blog about math, physics, programming and areas alike.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Ícaro Costa
