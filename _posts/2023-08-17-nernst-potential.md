@@ -18,7 +18,7 @@ Our goal is to reach this expression starting from first principles of statistic
 Our model will assume that the membrane separate a system of $N$ particles of charge $q$ that are kept under constant temperature $T$ in a heat bath. The exact shape of this boundary is assumed to be unimportant. The number of particles is kept constant.
 
 {: refdef: style="text-align: center;"}
-|![Membrane Model](/assets/images/2023/2023-08-17-nernst-potential/membrane.svg){: width="30%"}|
+|![Membrane Model]({{ site.baseurl }}/assets/images/2023/2023-08-17-nernst-potential/membrane.svg){: width="30%"}|
 |:--:|
 |*The model assumes that the membrane separates the system into two regions $\Omega$ and $\Sigma$ with different concentration of particles.*|
 {: refdef}
