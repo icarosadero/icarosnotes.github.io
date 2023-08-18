@@ -36,6 +36,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-mermaid
+  - jekyll-feed
   - jekyll/scholar
 
 mermaid:
