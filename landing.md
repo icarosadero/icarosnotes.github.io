@@ -2,7 +2,7 @@
 title: Landing
 layout: landing
 description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
-image: assets/images/pic07.jpg
+image: assets/images/LW298-MC-Escher-Metamorphosis-I-19371.jpg
 nav-menu: true
 ---
 
