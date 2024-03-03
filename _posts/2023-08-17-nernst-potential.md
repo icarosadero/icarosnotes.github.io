@@ -113,4 +113,6 @@ $$\Delta V = \frac{1}{\beta q}\ln\left(\frac{n_1}{n_2}\right)$$
 
 Which is the Nernst Potential with $\beta = \frac{1}{k_B T}$.
 
-{% bibliography %}
+---
+
+{% bibliography --cited %}
