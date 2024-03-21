@@ -38,6 +38,7 @@ plugins:
   - jekyll-mermaid
   - jekyll-feed
   - jekyll/scholar
+  - jekyll-figure
 
 mermaid:
   src: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
@@ -45,6 +46,12 @@ mermaid:
 
 sass:
   style: compressed
+
+scholar:
+  style: ieee
+
+jekyll-figure:
+  paragraphs: false
 
 exclude:
 - "*.gemspec"

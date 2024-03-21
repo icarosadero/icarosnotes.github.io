@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem 'jekyll-timeago', '~> 0.13.1'
   gem 'jekyll-scholar', '~> 7.0.0'
   gem 'jekyll-feed', '~> 0.17.0'
+  gem 'jekyll-figure', '~> 0.2.0'
 end
